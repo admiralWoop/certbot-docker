@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:3.16
+FROM arm32v7/alpine:3.14
 
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
