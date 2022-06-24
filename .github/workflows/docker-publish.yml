@@ -3,12 +3,6 @@ name: Build & Publish
 on:
   push:
     branches: [ master ]
-    paths:
-      - 'dotnet-app/**'
-      - '.github/workflows/**'
-      - 'Dockerfile'
-      - '.dockerignore'
-      - '.gitignore'
   release:
     types: [ published ]
 
