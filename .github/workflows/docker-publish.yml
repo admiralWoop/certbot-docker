@@ -15,7 +15,7 @@ on:
 jobs:
   docker_publish:
     name: Build dockerfile and publish to Docker Hub
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
