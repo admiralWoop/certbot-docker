@@ -1,5 +1,7 @@
 FROM arm32v7/alpine:3.14
 
+RUN sed -i 's/https/http/' /etc/apk/repositories
+
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
     apk --no-cache --virtual add certbot fish jq tini
