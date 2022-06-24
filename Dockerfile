@@ -1,4 +1,4 @@
-FROM containerstack/alpine:3.7.0
+FROM admiralwoop/docker-alpine-arm
 
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
