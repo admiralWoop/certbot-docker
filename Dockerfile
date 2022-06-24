@@ -1,6 +1,4 @@
-FROM arm32v7/alpine:3.14
-
-RUN sed -i 's/https/http/' /etc/apk/repositories
+FROM containerstack/alpine:3.7.0
 
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
