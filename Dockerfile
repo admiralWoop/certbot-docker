@@ -1,6 +1,6 @@
 FROM admiralwoop/docker-alpine-arm
 
-RUN apk add -no-cache certbot fish jq tini
+RUN apk add --no-cache certbot fish jq tini
 
 COPY crontab /crontabs/root
 COPY renew-all /run/
