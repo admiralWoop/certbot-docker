@@ -1,6 +1,6 @@
 # certbot-docker
 
-[![Build Status](https://travis-ci.org/joshkunz/certbot-docker.svg?branch=master)](https://travis-ci.org/joshkunz/certbot-docker)
+[![Build & Publish](https://github.com/admiralWoop/certbot-docker-armhf/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/admiralWoop/certbot-docker-armhf/actions/workflows/docker-publish.yml)
 
 This repository contains a Docker container for doing automatic certificate
 renewal of LetsEncrypt certificates using the `certbot` utility.
@@ -11,7 +11,7 @@ commands) or too complex (include embedded reverse-proxies, etc.). This
 container is designed to manage certificates for several domains, while
 not requiring any particular reverse proxy.
 
-Docker Hub: [jkz0/certbot](https://hub.docker.com/r/jkz0/certbot)
+Docker Hub: [admiralwoop/certbot](https://hub.docker.com/r/admiralwoop/certbot)
 
 ## Using the container
 
@@ -24,7 +24,7 @@ $ docker run --rm -it \
     -e ACCOUNT_EMAIL='<your email>'
     -v <config file>:/conf
     -v <cert directory>:/certs
-    jkz0/certbot:latest
+    admiralwoop/certbot:latest
 ```
 
 Via `docker-compose.yml`:
@@ -33,7 +33,7 @@ Via `docker-compose.yml`:
 version: "3"
 services:
     certbot:
-        image: jkz0/certbot:latest
+        image: admiralwoop/certbot:latest
         environment:
             - ACCOUNT_EMAIL=<your email>
         volumes:
